@@ -211,13 +211,13 @@ Except for the subtables *config* the same data is provided.
    [[tasks]]
    name = "optimization"
    driver = "lbfgs"
-   [task.config]
+   [tasks.config]
    tolerance = 1.0e-7
 
    [[tasks]]
    name = "equilibration"
    driver = "velocity-verlet"
-   [task.config]
+   [tasks.config]
    time-step = 1.0
    temperature = 300.0
    max-steps = 500
@@ -225,7 +225,7 @@ Except for the subtables *config* the same data is provided.
    [[tasks]]
    name = "production"
    driver = "velocity-verlet"
-   [task.config]
+   [tasks.config]
    time-step = 1.0
    temperature = 300.0
    max-steps = 10000
